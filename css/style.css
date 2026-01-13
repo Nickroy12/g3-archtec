@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+header{
+    margin-top: 50px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.container{
+      width: 70%;
+    max-width: 1140px;
+  margin: 0 auto;
+}
+main{
+    width: 70%;
+max-width: 1140px;
+  margin: 0 auto;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+ 
+
+}
+ul li{
+    list-style: none;
+}
+ul li a {
+    text-decoration: none;
+    color: #424242;
+    font-weight: 400;
+}
+#hero{
+ display: flex;
+ justify-content: center;
+ padding-top: 150px;
+ text-align: center;
+}
+.text-content h1{
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+.text-content p {
+    color: #424242;
+    line-height: 30px;
+    padding: 0px 38px;
+    margin-bottom: 20px;
+}
+.explor{
+    background: #FF900E;
+    border: none;
+    padding: 20px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.explor a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+.text-content img{
+    width: 100%;
+}
+.team , .feature{
+    display: flex;
+    gap: 54px;
+    margin-top: 150px;
+}
+.team-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:20px;
+}
+.team-img img{
+    width: 250px;
+}
+.textContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.textContent  h3{
+    font-size: 35px;
+    font-weight: 500;
+   color: #424242;
+   margin-bottom: 12px;
+}
+.textContent  p {
+	font-size: 15px;
+	line-height: 25px;
+      color: #424242;
+       margin-bottom: 12px;
+}
+#hightlight{
+      font-weight: bold;
+   color: #000;
+}
+#orange{
+    color: #FF900E;
+}
+
+
+
+
+@media screen and (max-width:675px) {
+    nav{
+        flex-direction: column;
+        text-align: center;
+    }
+    nav .logo{
+        margin-bottom: 30px;
+    }
+    .text-content h1{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.text-content p {
+    color: #424242;
+    line-height: 30px;
+    padding: 0px 0px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.team{
+  flex-direction: column;
+}
+.team-img{
+      grid-template-columns: repeat(1, 1fr);
+      justify-content: center;
+}
+
+}
+
